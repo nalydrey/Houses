@@ -1,0 +1,28 @@
+.safe{
+    padding-top: 100px;
+}
+
+.safe__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+
+}
+.safe__foto{
+    max-width: 700px;
+}
+
+.safe__discr{
+    flex-basis: 370px;
+}
+
+@media(max-width: 910px){
+    .safe__container{
+        flex-direction: column;
+    }
+    .safe__discr{
+        order: -1;
+        flex-basis: 0;
+    }
+}

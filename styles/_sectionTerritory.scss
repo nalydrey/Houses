@@ -1,0 +1,38 @@
+.territory{
+    position: relative;
+    background-image: url('../icons/tlo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.territory__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.territory__discr{
+    flex-basis: 370px;
+}
+
+.slider{
+    min-width: 0;
+    width: 50%;    
+}
+
+@media(max-width: 1050px){
+    .territory__container{
+        flex-direction: column;
+        gap:20px
+    }
+    .territory__discr{
+        flex-basis: 0;
+    }
+    .slider{
+        width: 100%;    
+    }
+}
+
+
+
+

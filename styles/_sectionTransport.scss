@@ -1,0 +1,30 @@
+.transport{
+    background-image: url(../icons/tlo.jpg);
+}
+.transport__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transp__sl{
+    width: 50%;
+}
+
+.transport__discr{
+   flex-basis: 470px;
+}
+
+@media(max-width: 1050px){
+    .transport__container{
+        flex-direction: column;
+        gap:20px
+    }
+    .transport__discr{
+        flex-basis: 0;
+        order: -1;
+    }
+    .slider{
+        width: 100%;    
+    }
+}

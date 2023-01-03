@@ -1,0 +1,32 @@
+.cotage{
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+}
+.cotage__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cotage__discr{
+    flex-basis: 380px;
+    ul{
+        list-style-type: disc;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 860px){
+    .cotage__container{
+        flex-direction: column;        
+    }
+    .cotage__discr{
+        flex-basis: 0px;
+        order:-1;
+        ul{
+           list-style-position: inside;
+        }
+    }
+}

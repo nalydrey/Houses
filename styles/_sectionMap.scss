@@ -1,0 +1,136 @@
+.map__wrap{
+    position: relative;
+    overflow: auto;
+    max-height: 580px;
+}
+
+.map__box{
+    position: relative; 
+    font-size: 19px;  
+    min-width: 500px;       
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
+.label{    
+    width: calcFluidSize(20, 50, 384, 1170);  
+    position: absolute;
+    top: 0;
+    left: 0;  
+    svg{
+        display: block;
+    }
+    path.isBuy{
+        fill: red;
+    }
+    span{
+        width: 100%;
+        height: 100%;       
+        color: white; 
+        font-size: 1em;
+        position: absolute;
+        padding: 2px 5px;        
+        top: 0;
+        left: 0;
+    }
+}
+
+.card__discr{
+    padding: 20px 5px 5px;
+    width: 150px;   
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 150%;
+    left: -120%;
+    z-index: 2; 
+    p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    li{
+        margin-bottom: 5px;
+    }
+}
+ 
+.map__zoom{
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;       
+    }
+    .in{
+        background-image: url(../icons/in.svg);
+    }
+    .out{
+        background-image: url(../icons/out.svg);
+    }
+    button:hover{
+        background-color: lightblue;
+    }
+}
+
+.tooltip{
+    position: relative;
+}
+
+.sign{
+    position: absolute;
+    padding: 5px;
+    border-radius: 40px;
+    top: -35px;
+    left: 35%;
+}
+
+
+.ribbon{
+    text-align: center;
+    padding: 30px 90px 50px 35px;
+    background: rgba(6, 180, 54, 0.5);
+    position: absolute;
+    border-radius: 0 0 0 15px;
+    top: 0;
+    right: 10%;
+    .percent{
+        font-size: 58px;
+        color: #E9C878;
+    }
+    p{
+        color: white;
+    }
+    &:before{
+        // border: 1px solid black;
+        content: '';
+        display: block;
+        width: 120px;
+        height: 120px;
+        background-image: url(../icons/label_icon.png);
+        background-position: center;
+        background-size: auto;
+        background-size: cover;
+        position: absolute;       
+        bottom: -25%;
+        right: -15%;
+    }
+    img{
+        width: 200%;
+    }
+    
+}
+
+@media(max-width: 800px){
+    .ribbon{
+        display: none;
+    }
+}

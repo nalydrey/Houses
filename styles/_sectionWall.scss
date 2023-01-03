@@ -1,0 +1,59 @@
+.wall__container{
+    h2,h3{
+        text-align: center;
+    }
+    h3{
+        margin-bottom: 110px ;
+    }
+    .wall__wrap{
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+    .wall__discr{
+        width: 370px;
+        min-width: 320px;
+    } 
+    .wall__diagram{
+        border: 1px solid #EBEBEB;
+        padding: 15px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .wall__brick{
+            width: 50%;
+            position: absolute;
+            top: -10%;
+            left: 40%;
+        }
+    } 
+}
+
+
+
+
+@media (max-width: 1000px){
+    .wall__container{
+        h3{
+            margin-bottom: 50px;
+        }
+        .wall__wrap{
+            flex-direction: column;
+            gap: 10px;
+            .wall__discr{
+                width: 100%;
+                order: -1;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    
+    .wall__container{
+        h3{
+            margin-bottom: 40px;
+        }
+    }
+}

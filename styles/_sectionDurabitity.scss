@@ -1,0 +1,21 @@
+.durability{
+    padding-top: 80px;
+}
+.durability__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.durability__discr{
+    flex-basis: 370px;
+}
+
+@media(max-width: 800px){
+    .durability__container{
+        flex-direction: column;
+    }
+    .durability__discr{
+        flex-basis: 0px;
+    }
+}

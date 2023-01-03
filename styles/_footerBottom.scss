@@ -1,0 +1,10 @@
+.footer__bottom{
+    padding: 45px 0;
+    background-color: #00004A;
+}
+
+@media(max-width: 1200px){
+    .footer__bottom{
+    padding: calcFluidFontSize(20, 45, 360, 1200) 0;
+    }
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 500;
+    color: #28292E;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+h1, h2, h3{
+    font-family: 'Neumann';
+    font-weight: 400;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h1, h2{
+    font-size: 68px;
+}
+
+h3{
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+h4{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 17px;
+}
+
+h5{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+h6{
+    font-size: 24px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+h2+h3{
+    margin-top: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+.none{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    h1,h2{
+        font-size: calcFluidFontSize(35, 68, 320, 1200);
+        line-height: calcFluidFontSize(52, 100, 360, 1200);
+    }
+    h2+h3{
+        margin-top: calcFluidFontSize(5, 15, 320, 1200);
+    }
+    h3{
+        font-size: calcFluidFontSize(35, 45, 320, 1200);
+    }
+    h4{
+        font-size: calcFluidFontSize(28, 30, 320, 1200);
+        padding-bottom: 14px;
+    }
+    h6{
+        font-size: calcFluidFontSize(16, 24, 320, 1200);
+    }
+   
+    p{
+        font-size: calcFluidFontSize(18, 20, 320, 1200);
+    }
+}
+
+
+
+
+
+

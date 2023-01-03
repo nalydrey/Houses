@@ -1,0 +1,222 @@
+header{   
+   
+    background-color: #3766CC;
+    background-image: url(/images/foto1.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    max-width: 100vw; 
+    color: white;
+}
+
+.logo a{
+        font-size: 28px;
+        font-family: 'Neumann';
+        font-weight: 400;
+        text-transform: uppercase;
+} 
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 50px;    
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    *{
+    color: white;
+    }
+    span{
+        color: #E9C878;
+    }
+    a{
+        font-size: 26px;
+    }
+    .workTime{
+        position: relative;
+    }
+    .workTime::before{
+        content: '';
+        display: flex;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: green;
+        position: absolute;
+        top: 40%;
+        left: -15px;
+    }
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+}
+
+.house{
+    padding-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 30px;
+    h1 span{
+            text-transform: uppercase;    
+            font-family: 'Neumann';
+            background: linear-gradient(90.55deg, #FFFFFF 0.22%, #E9C878 99.81%); 
+            -webkit-background-clip: text;     
+            -webkit-text-fill-color: transparent;      
+        }
+    
+    h3{
+        text-transform: uppercase;        
+    }
+    
+    .house__p{        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        background-image: url(/icons/Rectangle\ 540.png);
+        background-repeat: no-repeat;       
+        width: 240px;
+        height: 50px;              
+    }     
+}
+
+.header__button{
+    margin-top: 70px;
+    &::before{
+        background-image: url(/icons/Group.png);
+    }
+}
+
+.bottom{    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.browse{
+    width: 250px;
+    padding: 40px 40px 250px;
+    margin-top: 50px;
+    background-color: rgba(55, 102, 204, 0.5);
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        left: -90px;
+        top: -75px;
+        background-image: url('/icons/Иконка.png');
+        background-repeat: no-repeat;
+        background-position: 50% 40%;       
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    a{
+        font-size: 18px;
+        color: #E9C878;
+        text-decoration: underline;                
+    }
+}
+
+
+@media (max-width: 968px) {
+    
+    .contacts {
+      margin: 0 auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+@media (max-width: 840px) {
+    .header__container{
+        gap: 10px 100px;
+    }
+    .contacts {
+      margin: 0 auto;
+      flex-direction: column;
+    //   text-align: center;
+      gap: 5px;
+    }
+    .bottom{
+        flex-direction: column;
+        
+    }
+    // .header__button{
+    //     margin-top: 30px;
+    // }
+    .browse{
+        padding-bottom: 50px;
+        align-self: flex-end;
+    }
+  }
+@media (max-width: 690px) {
+  
+
+    .house{
+        padding-top: 43px;
+    }
+    
+    .header__container{
+        gap: 20px 100px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contacts {
+      align-items: flex-start;
+      margin: 0;
+      text-align: start;
+     
+    }
+    .bottom{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .header__button{
+        margin-top: 30px;
+    }
+    .browse{
+        padding-bottom: 50px;
+        align-self: flex-end;
+    }
+  }
+
+  @media (max-width: 450px) {
+    
+    .house{
+        gap: 10px 30px;
+    }
+    .gold__button{
+        width: 328px;
+        height: 70px;
+        gap: 15px;
+    }
+    
+      .house 
+      .bottom{
+        align-items: center;
+      }
+     
+      
+      
+  }
+
+
+
+
+

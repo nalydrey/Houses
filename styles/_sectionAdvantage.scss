@@ -1,0 +1,113 @@
+
+
+
+.advantage{
+    padding: 300px 10px 100px 10px;
+    // border: 1px solid black;
+    background: #F5F5F5;
+    h2{
+        font-family: 'Neumann';
+        font-size: 68px;
+        margin-bottom: 15px;
+    }
+    h3{
+        font-family: 'Neumann';
+        font-size: 45px;
+    }
+    .firstP{
+        margin: 40px 0;
+    }
+    p{
+        padding-right: 150px;
+        font-size: 22px;
+    }
+}
+
+.fotos{
+    
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .foto1{
+        transform: translate(-70px, -40px);
+    }
+    .foto2{
+        position: relative;
+        transform: translate(0px, 100px);
+        z-index: 2;
+
+    }
+    .foto3{
+        transform: translate(-70px, 200px);
+        z-index: 3;
+    }
+
+}
+
+.advantage__container{
+    display: flex;
+    gap: 50px;
+}
+
+@media(max-width: 1400px){
+    .advantage{
+        padding-top: 50px;
+    }
+}
+
+@media(max-width: 1070px){
+    .advantage p{
+        padding-right: 70px;
+    }
+}
+
+@media(max-width: 970px){
+    .advantage{
+        text-align: center;
+    }
+    .advantage h3{
+        font-size: 25px;
+    }
+    .advantage p{
+        font-size: 18px;   
+        padding-right: 0;     
+    }
+    .fotos{
+        margin-left: 50px;
+    }
+    .advantage .firstP{
+        margin: 20px 0;
+    }
+    .advantage__container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 550px){
+    .advantage h2{
+        font-size: 35px;
+    }
+    .firstP{
+        margin: 20px 0px;
+    }
+    .fotos{
+        margin-left: 0px;
+    }
+    .foto{
+        width: 280px;
+    }
+    .fotos .foto1{
+        transform: translate(-20px, -40px);
+    }
+    .fotos .foto2{
+        transform: translate(20px, 50px);
+    }
+    .fotos .foto3{
+        transform: translate(-20px, 140px);
+    }
+}
+

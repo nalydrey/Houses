@@ -1,0 +1,33 @@
+.gold__button{
+    color: #6E5A45;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    width: 370px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background: linear-gradient(92.7deg, #E9C878 0%, #C1A050 100%);
+    box-shadow: 0px 3px 0px rgba(233, 200, 120, .5);
+    &::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 1200px){
+    .gold__button{
+        width: calcFluidFontSize(328, 370, 360, 1200);
+        height: calcFluidFontSize(70, 80, 360, 1200);       
+    }
+}

@@ -1,0 +1,64 @@
+.gallary__container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "main main wide wide"
+    "main main little1 little2";
+    ul{
+        position: absolute;
+        padding: 30px;
+    }
+    li{
+        color: white;
+        font-weight: 700;
+    }
+    li:first-child{
+        font-size: 26px;
+        line-height: 31px;
+    }
+    li:last-child{
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.gallary__main{
+    grid-area: main;
+}
+
+.gallary__wide{
+    grid-area: wide;
+}
+
+.gallary__little1{
+    grid-area: little1;
+}
+.gallary__little2{
+    grid-area: little2;
+}
+
+@media(max-width: 1200px){
+    .gallary__container{
+        ul{
+            padding: calcFluidFontSize(20,30, 360, 1200);
+        }
+        li:first-child{
+            font-size: calcFluidFontSize(18, 26, 360, 1200);
+            line-height: calcFluidFontSize(22, 31, 360, 1200);
+        }
+        li:last-child{
+            font-size: calcFluidFontSize(24, 36, 360, 1200);
+            line-height: calcFluidFontSize(29, 43, 360, 1200);
+        }
+    }
+}
+@media(max-width: 810px){
+    .gallary__container{
+        grid-template-areas: 
+        "main main"
+        "wide wide"
+        "little1 little2";
+    }
+}
